@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.BLOCKCHAIN_PORT;
-const authServerUrl = process.env.AUTH_SERVER_URL || `https://registration-io.onrender.com`;
+const authServerUrl = process.env.AUTH_SERVER_URL;
 
 // Налаштування CORS
 app.use(cors({
